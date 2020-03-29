@@ -24,6 +24,10 @@ public class LogOutPage extends BasePage {
         super(pDriver);
     }
 
+    /**
+     * Method that validates if the user can perform the logout
+     * @return boolean value as response of the validation
+     */
     public boolean isLogOutPossible() {
         if (isEverythingSaved){
             log.info("Everything is saved. The user can log out");
@@ -34,6 +38,10 @@ public class LogOutPage extends BasePage {
         }
     }
 
+    /**
+     * Method that manages the logic to logout
+     * @return boolean of the action performed
+     */
     public boolean logOutUser() {
         log.info("Secure disconnecting");
         log.info("Saving timestamp");

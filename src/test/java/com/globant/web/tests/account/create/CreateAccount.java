@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 @Slf4j
 public class CreateAccount extends CreateAccountTest {
 
+    /**
+     * Test to create a new account
+     */
     @Test
     public void createAccount() {
         log.info("[Test - Create account]");

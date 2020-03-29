@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 @Slf4j
 public class DeleteAccount extends DeleteAccountTest {
 
+    /**
+     * Test to delete an account
+     */
     @Test
     public void deleteAccount() {
         log.info("[Test - Delete account]");

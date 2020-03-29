@@ -4,6 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+/**
+ * Base test with the basic annotations for all the suites
+ */
+
 @Slf4j
 public class BaseTest {
 

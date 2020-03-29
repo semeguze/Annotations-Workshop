@@ -25,16 +25,28 @@ public class CreateAccountPage extends BasePage {
         super(pDriver);
     }
 
+    /**
+     * Method that validates if the username is available
+     * @return boolean value as response of the validation
+     */
     public boolean isUserAvailable() {
         log.info("The user : {} is valid", fakeUsername);
         return true;
     }
 
+    /**
+     * Method that validates if the email is available
+     * @return boolean value as response of the validation
+     */
     public boolean isEmailValid() {
         log.info("The email : {} is valid", fakeEmail);
         return true;
     }
 
+    /**
+     * Method that validates if original pass and the copy pass are the same
+     * @return boolean value as response of the validation
+     */
     public boolean isPasswordValid() {
         if (fakePasswordOriginal.equals(fakePasswordCopy)) {
             log.info("The password is valid");
@@ -45,6 +57,10 @@ public class CreateAccountPage extends BasePage {
         }
     }
 
+    /**
+     * Method that validates if account is already saved
+     * @return boolean value as response of the validation
+     */
     public boolean isAccountStored() {
         log.info("The account is already stored");
         return true;

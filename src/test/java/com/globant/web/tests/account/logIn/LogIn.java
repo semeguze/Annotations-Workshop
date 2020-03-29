@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 @Slf4j
 public class LogIn extends LoginTest {
 
+    /**
+     * Test to login
+     */
     @Test
     public void deleteAccount() {
         log.info("[Test - LogIn]");

@@ -8,6 +8,9 @@ import org.testng.annotations.Test;
 @Slf4j
 public class LogOut extends LogOutTest {
 
+    /**
+     * Test to logout
+     */
     @Test
     public void deleteAccount() {
         log.info("[Test - LogOut]");

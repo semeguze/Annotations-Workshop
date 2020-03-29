@@ -4,6 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Entity tat represents an Account
+ */
+
 @Getter
 @Setter
 @AllArgsConstructor

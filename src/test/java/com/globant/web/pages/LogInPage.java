@@ -23,6 +23,10 @@ public class LogInPage extends BasePage {
         super(pDriver);
     }
 
+    /**
+     * Method that validates if the username and password syntax are valid
+     * @return boolean value as response of the validation
+     */
     public boolean validateFields() {
         log.info("Validating syntax for 'username' field : {}", fakeUsername);
         log.info("Validating syntax for 'password' field : {}", fakePassword);
@@ -30,6 +34,10 @@ public class LogInPage extends BasePage {
         return true;
     }
 
+    /**
+     * Method that manages the logic to login
+     * @return boolean of the action performed
+     */
     public boolean logInUser() {
         log.info("Get the auth token from /v1/oauth");
         String token = "ABBABANE123123238JDSKASDEK435345";
