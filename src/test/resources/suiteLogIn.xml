@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LogIn test suite" verbose="1">
+	<test name="LogIn">
+		<classes>
+			<class name="com.globant.web.tests.account.logIn.LogIn"/>
+		</classes>
+	</test>
+</suite>

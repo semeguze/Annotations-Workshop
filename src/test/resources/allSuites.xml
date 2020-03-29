@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All-in-one test suite" verbose="1">
+	<test name="Create account">
+		<classes>
+			<class name="com.globant.web.tests.account.create.CreateAccount"/>
+		</classes>
+	</test>
+	<test name="LogIn">
+		<classes>
+			<class name="com.globant.web.tests.account.logIn.LogIn"/>
+		</classes>
+	</test>
+	<test name="LogOut">
+		<classes>
+			<class name="com.globant.web.tests.account.logOut.LogOut"/>
+		</classes>
+	</test>
+	<test name="Delete account">
+		<classes>
+			<class name="com.globant.web.tests.account.delete.DeleteAccount"/>
+		</classes>
+	</test>
+</suite>

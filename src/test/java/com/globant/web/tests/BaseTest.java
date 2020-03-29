@@ -1,42 +1,25 @@
 package com.globant.web.tests;
 
-import com.globant.web.driver.Driver;
-import com.globant.web.pages.HomePage;
-import org.apache.log4j.Logger;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
+import lombok.extern.slf4j.Slf4j;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
-/**
- * Parent of the other classes of test.
- * @author juan.montes
- */
+@Slf4j
 public class BaseTest {
-	
-	Driver driver;
-	
-	private HomePage Home;
-	public Logger log = Logger.getLogger(BaseTest.class);
-	
-	
-	@BeforeTest(alwaysRun=true)
-	@Parameters({"browser", "url"})
-	public void beforeTest(String browser, String url) {
-		driver = new Driver(browser);
-		Home= new HomePage(driver.getDriver(), url);
-	}
 
-	@AfterTest(alwaysRun=true)
-	public void afterTest() {
-		Home.dispose();
-	}
-	
-	/**
-	 * Get the home page.
-	 * @return HomePage
-	 */
-	public HomePage getHomePage() {
-		return Home;
-	}
+    @BeforeSuite
+    public void beforeSuite() {
+        log.info("[BeforeSuite] - Base Test");
+        log.info("Setting up the driver");
+        log.info("Validate Internet connection");
+
+    }
+
+    @AfterSuite
+    public void afterSuite() {
+        log.info("[AfterSuite] - Base Test");
+        log.info("Close connection");
+    }
+
 
 }
