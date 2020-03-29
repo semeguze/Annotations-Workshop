@@ -1,12 +1,14 @@
-INSTALL FRAMEWORk
+# Workshop Sebas :) 
 
-1. git clone https://github.com/juan-montes-globant/WebAutomationAcademy.git
-2. mvn clean install -DskipTests
-3. mvn eclipse:eclipse or mvn idea:idea
+This repo contains the resolution to the Workshop of Web Automation module at Globant.
 
-Create new branch
+![Structure](https://i.imgur.com/hO9XBhr.png)
+![Logs](https://i.imgur.com/FqHtC9V.png)
 
-3. git checkout -b "name-branch"
-4. git add .
-5. git commit -m "mensaje"
-6. git push origin "name-branch"
+# Notes!
+
+  - This project has been created using IntelliJ and Maven dependencies.
+  - This projes uses Page Object Model.
+  - There is a suite for each sceneario (create account, delete accunt, log-in & log-out).
+  - There is a suite for all the flows (All-in-one test suite) call allSuites.xml.
+  - The Test classes only contains the @Test annotation, so the @BeforeClass and other annotations are located in a class from where the Test class extends.
